@@ -1,3 +1,8 @@
 package com.example.demo.Service;
 
-public interface StudentRepository extends JpaRepository
+import org.springframework.stereotype.Service;
+
+@Service
+public class StudentService{
+
+}

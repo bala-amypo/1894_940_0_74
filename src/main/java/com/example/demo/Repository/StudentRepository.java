@@ -1,6 +1,6 @@
 package com.example.demo.Repository;
 
-import org.spri
+import org.springframework
 
 public interface StudentRepository extends JpaRepository<Student, Long>{
 
