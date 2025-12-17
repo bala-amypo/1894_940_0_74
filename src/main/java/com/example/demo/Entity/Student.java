@@ -1,6 +1,6 @@
 package com.example.demo.Entity;
     
-    public StudentDetail(int id, String name, String email) {
+    public StudentDetail(Long id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -9,10 +9,10 @@ package com.example.demo.Entity;
     public StudentDetail() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;   
     }
     public String getName() {
