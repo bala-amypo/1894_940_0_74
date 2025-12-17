@@ -6,6 +6,7 @@ import com.example.demo.Service.StudentService;
 
 @Service
 public class StudentServiceImp implements  StudentService{
-    
+
+    private final StudentRepository StudentRepository
 } 
 
