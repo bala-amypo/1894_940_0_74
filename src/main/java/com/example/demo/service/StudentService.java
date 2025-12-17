@@ -1,6 +1,7 @@
-package com.example.demo.Service;
+package com.example.demo.service;
 
-@Service
+import com.example.demo.entity.Student;
+
 public interface StudentService{
-
+    Student saveStudent(Student student);
 }
