@@ -7,20 +7,20 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
-    private long int id;
+    private long id;
     private String name;
     private String email;
     
-    public Student(long int id, String name, String email, LocalDate dob, float cgpa) {
+    public Student(long id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
-    public void setId(long int id) {
+    public void setId(long id) {
         this.id = id;
     }
     
