@@ -1,20 +1,19 @@
-package com.example.demo.ServiceImplementation;
+package com.example.demo.ServiceImp;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.Service.StudentService;
+import com.example.demo.entity.Student;
+import com.example.demo.repository.StudentRepository;
+import com.example.demo.service.StudentService;
 
 @Service
-public class StudentServiceImp implements  StudentService{
+public class StudentServiceImple implements StudentService {
 
-    // private final StudentRepository studentRepository;
-    // public StudentServiceImp(StudentRepository studentRepository){
-    //     this.studentRepository = studentRepository;
-    // }
-    @AutoWired
+    @Autowired
     StudentRepository studentRepository;
-    public Student SaveStudent(Student student){
+
+    public Student saveStudent(Student student){
         return studentRepository.save(student);
     }
-} 
-
+}
