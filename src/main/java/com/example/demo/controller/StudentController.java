@@ -6,7 +6,9 @@ public class StudentController{
     StudentService Studentservice
 
     @postMapping("/postdata")
-    public Student postdata(@RequestBody Student student)
+    public Student postdata(@RequestBody Student student){
+        return studentService.saveStudent(student);
+    }
 
     
 
