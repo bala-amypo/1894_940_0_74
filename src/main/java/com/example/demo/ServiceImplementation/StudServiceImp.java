@@ -8,7 +8,7 @@ import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
 
 @Service
-public class StudentServiceImpl implements StudentService {
+public class StudServiceImpl implements StudentService {
 
     @Autowired
     StudentRepository studentRepository;
