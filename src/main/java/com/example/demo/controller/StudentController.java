@@ -5,7 +5,7 @@ import com.example.demo.service.StudentService;
 @RestController
 public class StudentController{
     @Autowired
-    StudentService studentservice;
+    StudentService studentService;
 
     @postMapping("/postdata")
     public Student postdata(@RequestBody Student student){
